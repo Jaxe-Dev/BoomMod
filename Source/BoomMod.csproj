@@ -57,8 +57,12 @@
     <Content Include="..\About\About.xml">
       <Link>-\About\About.xml</Link>
     </Content>
+    <Content Include="..\About\Manifest.xml">
+      <Link>-\About\Manifest.xml</Link>
+    </Content>
     <Content Include="..\About\ModSync.xml">
       <Link>-\About\ModSync.xml</Link>
+      <SubType>Designer</SubType>
     </Content>
   </ItemGroup>
   <ItemGroup>
