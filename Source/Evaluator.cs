@@ -8,11 +8,11 @@ namespace BoomMod
     internal static class Evaluator
     {
         private static readonly Dictionary<HediffDef, float> ExplosionChance = new Dictionary<HediffDef, float>
-                                                                               {
-                                                                                           { HediffDefOf.Burn, 1f },
-                                                                                           { HediffDefOf.Gunshot, 1f },
-                                                                                           { HediffDefOf.Shredded, 1f }
-                                                                               };
+        {
+                    { HediffDefOf.Burn, 1f },
+                    { HediffDefOf.Gunshot, 1f },
+                    { HediffDefOf.Shredded, 1f }
+        };
 
         private static readonly string[] ListedPawnKindDefs = { "Boomalope", "Boomrat" };
 
