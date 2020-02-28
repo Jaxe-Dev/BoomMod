@@ -1,8 +1,11 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-
+<?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
+  <packageId>Jaxe.BoomMod</packageId>
   <name>BoomMod</name>
   <author>Jaxe</author>
-  <targetVersion>1.0.0</targetVersion>
-  <description>Mod Version: 1.1\n\n\nWith this mod Boomalopes and Boomrats will only explode on death when the killing blow is a gunshot, burn, another explosion or they are otherwise on fire at the time. Melee weapons, medieval ranged weapons and natural causes do not trigger an explosion.</description>
+  <supportedVersions>
+    <li>1.0</li>
+    <li>1.1</li>
+  </supportedVersions>
+  <description>Mod Version: 1.2\n\n\nWith this mod Boomalopes and Boomrats will only explode on death when the killing blow is a gunshot, burn, another explosion or they are otherwise on fire at the time. Melee weapons, medieval ranged weapons and natural causes do not trigger an explosion.</description>
 </ModMetaData>
