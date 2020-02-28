@@ -1,4 +1,4 @@
-﻿using Harmony;
+using HarmonyLib;
 using Verse;
 
 namespace BoomMod
@@ -8,8 +8,8 @@ namespace BoomMod
     {
         public const string Id = "BoomMod";
         public const string Name = Id;
-        public const string Version = "1.1";
+        public const string Version = "1.2";
 
-        static Mod() => HarmonyInstance.Create(Id).PatchAll();
+        static Mod() => new Harmony(Id).PatchAll();
     }
 }
