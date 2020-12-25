@@ -14,7 +14,7 @@ namespace BoomMod
                     { HediffDefOf.Shredded, 1f }
         };
 
-        private static readonly string[] ListedPawnKindDefs = { "Boomalope", "Boomrat" };
+        private static readonly string[] ListedPawnKindDefs = { "Boomalope", "Boomrat", "AEXP_Boombat" };
 
         private static bool _explosionImminent;
 
