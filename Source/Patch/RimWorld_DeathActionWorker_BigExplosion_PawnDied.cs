@@ -7,6 +7,6 @@ namespace BoomMod.Patch
     [HarmonyPatch(typeof(DeathActionWorker_BigExplosion), nameof(DeathActionWorker_BigExplosion.PawnDied), typeof(Corpse))]
     internal static class RimWorld_DeathActionWorker_BigExplosion_PawnDied
     {
-        private static bool Prefix(Corpse corpse) => (corpse.InnerPawn == null) || !Evaluator.IsListedPawnKind(corpse.InnerPawn) || Evaluator.IsExplosionImmiment();
+        private static bool Prefix(Corpse corpse) => (corpse.InnerPawn == null) || !Evaluator.IsBoomPawnKind(corpse.InnerPawn) || Evaluator.IsExplosionImmiment();
     }
 }
