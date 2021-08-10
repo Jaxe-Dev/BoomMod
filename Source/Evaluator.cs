@@ -14,11 +14,9 @@ namespace BoomMod
                     { HediffDefOf.Shredded, 1f }
         };
 
-        private static readonly string[] ListedPawnKindDefs = { "Boomalope", "Boomrat" };
-
         private static bool _explosionImminent;
 
-        public static bool IsListedPawnKind(Pawn pawn) => ListedPawnKindDefs.Contains(pawn.kindDef.defName);
+        public static bool IsBoomPawnKind(Pawn pawn) => pawn.kindDef.defName.ToLower().StartsWith("boom");
 
         public static bool IsExploding(Pawn pawn, Hediff cause)
         {

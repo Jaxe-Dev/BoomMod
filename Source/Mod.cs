@@ -8,7 +8,7 @@ namespace BoomMod
     {
         public const string Id = "BoomMod";
         public const string Name = Id;
-        public const string Version = "1.3";
+        public const string Version = "1.5";
 
         static Mod() => new Harmony(Id).PatchAll();
     }

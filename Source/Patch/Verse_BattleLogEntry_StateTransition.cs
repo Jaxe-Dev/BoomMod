@@ -9,7 +9,7 @@ namespace BoomMod.Patch
     {
         private static void Prefix(Thing subject, ref RulePackDef transitionDef, Hediff culpritHediff)
         {
-            if (!(subject is Pawn pawn) || !Evaluator.IsListedPawnKind(pawn) || Evaluator.IsExploding(pawn, culpritHediff)) { return; }
+            if (!(subject is Pawn pawn) || !Evaluator.IsBoomPawnKind(pawn) || Evaluator.IsExploding(pawn, culpritHediff)) { return; }
             transitionDef = RulePackDefOf.Transition_Died;
         }
     }
